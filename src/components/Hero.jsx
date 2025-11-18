@@ -1,10 +1,7 @@
 import React from 'react';
 import { motion } from 'framer-motion';
-import { useTheme } from '../context/ThemeContext';
 
 const Hero = ({ onReserveClick }) => {
-  const { themeStyle } = useTheme();
-
   return (
     <section className="h-screen relative flex items-center justify-center overflow-hidden">
       {/* Демо фон */}
@@ -14,7 +11,7 @@ const Hero = ({ onReserveClick }) => {
           alt="Интерьер ресторана"
           className="w-full h-full object-cover"
         />
-        <div className={`absolute inset-0 ${themeStyle.overlay}`}></div>
+        <div className="absolute inset-0 bg-black/60"></div>
       </div>
 
       {/* Контент */}
@@ -37,7 +34,7 @@ const Hero = ({ onReserveClick }) => {
         </motion.h1>
         
         <motion.p 
-          className="text-xl md:text-2xl mb-8 text-beige-200 max-w-2xl mx-auto leading-relaxed"
+          className="text-xl md:text-2xl mb-8 text-gray-200 max-w-2xl mx-auto leading-relaxed"
           initial={{ opacity: 0, y: 30 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, delay: 1 }}
@@ -52,9 +49,7 @@ const Hero = ({ onReserveClick }) => {
           initial={{ opacity: 0, scale: 0.8 }}
           animate={{ opacity: 1, scale: 1 }}
           transition={{ duration: 0.5, delay: 1.5 }}
-          whileHover={{ 
-            scale: 1.05,
-          }}
+          whileHover={{ scale: 1.05 }}
           whileTap={{ scale: 0.95 }}
         >
           🍽️ Забронировать стол
