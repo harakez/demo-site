@@ -2,16 +2,35 @@
 <html lang="ru">
   <head>
     <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
-    <link href="/dist/output.css" rel="stylesheet">
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    
     <title>Demo Restaurant - Современный сайт ресторана</title>
     <meta name="description" content="Демо сайт современного ресторана">
     <script src="https://cdn.tailwindcss.com"></script>
   </head>
-  <body>
-    <div id="root"></div>
-    <script type="module" src="/src/main.jsx"></script>
+  <body class="bg-gray-100">
+    <!-- Просто добавь этот div с контентом вместо React root -->
+    <div class="min-h-screen flex items-center justify-center p-8">
+      <div class="max-w-md mx-auto bg-white rounded-xl shadow-lg overflow-hidden p-8">
+        <h1 class="text-3xl font-bold text-green-600 text-center mb-4">
+          Tailwind PABOTAET!
+        </h1>
+        <p class="text-gray-700 text-center mb-6">
+          Если видишь этот красивый стилизованный блок - проблема решила!
+        </p>
+        
+        <div class="flex justify-center gap-2 mb-6">
+          <span class="bg-blue-100 text-blue-800 text-sm font-medium px-3 py-1 rounded">
+            Тихика с авиамарой
+          </span>
+          <span class="bg-green-100 text-green-800 text-sm font-medium px-3 py-1 rounded">
+            Другая похота
+          </span>
+        </div>
+        
+        <p class="text-sm text-gray-500 text-center">
+          Это уведомление с разными стилями Tailwind
+        </p>
+      </div>
+    </div>
   </body>
 </html>
